@@ -1,5 +1,5 @@
 {
-  "name": "tickets.ticketing.service",
+  "name": "orders.ticketing.service",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
