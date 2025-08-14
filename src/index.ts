@@ -7,7 +7,11 @@ const start = async () => {
     throw new Error("Jwt key must be defined.");
   }
   try {
-    await natsWrapper.connect("ticketing", "asdfjkl", "http://nats-srv:4222");
+    await natsWrapper.connect(
+      "ticketing",
+      "orders-asdfjkl",
+      "http://nats-srv:4222"
+    );
 
     natsWrapper.client.on("close", () => {
       console.log("Nats connection closed");
